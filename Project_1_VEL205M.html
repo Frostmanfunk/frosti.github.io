@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project 1 - Manufacturing, designing and programming embedded systems</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+        <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Frosti</strong> <span> Tölvustýrður vélbúnaður - VÉL205M</span></a>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+        <!-- Menu -->
+            <nav id="menu">
+                <ul class="links">
+                    <li><a href="index.html">Heim</a></li>
+                    <li><a href="ferilskra.html">Ferilskrá</a></li>
+                    <li><a href="verkefni_1.html">Verkefni 1</a></li>
+                    <li><a href="verkefni_2.html">verkefni 2</a></li>
+                </ul>
+            </nav>
+
+        <!-- Main -->
+            <div id="main" class="alt">
+
+            <!-- One -->
+                <section id="one">
+                    <div class="inner">
+                        
+                    <!-- Verkefni 1 - VEL205M -->
+                        <h1>Project 1 - Manufacturing, Designing and Programming embedded systems.</h1>
+                        
+                        Add picture of final outcome here.
+                        
+                        <!-- Project description -->
+                        <div>
+                            <h2> Project description</h2>
+                            The project is split into 5 subprojects which are intertwined:
+                            <ol>
+                                <li> Circuit design</li>
+                                <li> Manufacturing electronic circuits</li>   
+                                <li> Programming microcontrollers</li>
+                                <li> Use of output devices</li>
+                                <li> Use of input devices</li>
+                            </ol>
+                                                
+                        </div>
+                        
+                        <div>
+                            <h3> What is needed for the project?</h3>
+                            Software
+                            <ul>
+                                <li> <a href="https://www.autodesk.com/products/eagle/free-download">Autodesk Eagle</a> (For PCB design)</li>
+                                <li> <a href= "https://inkscape.org/"> Inkscape</a> (For PCB board machining) </li>
+                                <li> <a href="https://www.arduino.cc/"> Arduino</a> (For programming) </li>
+                            </ul>
+                            Education
+                            <ul>
+                                <li> <a href="https://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html">Brian FabISP</a> </li>
+                                <li> <a href="https://www.youtube.com/@haflidiasgeirsson6506/videos"> Hafliði Ásgeirsson youtube channel</a> (course teacher) </li>
+                            </ul>
+                            Other
+                            <ul>
+                                <li> CNC - machine</li>
+                                <li> PCB components (see Brian FabISP)</li>
+                                <li> Multimeter (for mesuring circuit connections)</li>
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        
+                    <!-- Circuit design -->
+                        <h2> Circuit design </h2>
+                        <span class="image main"><img src="images/circuit_components.png" alt="" /></span>
+                        <span class="image main"><img src="images/circuit_traces.png" alt="" /></span>
+                        <p style="text-align: justify" >                   
+                            
+                            I designed the circuit in Autodesk Eagle and used Hafliði´s youtube <a href="https://www.youtube.com/watch?v=ELRp--zfYm0&t=915s"> video </a> as guidance. Following the steps in the youtube video should be sufficient to design the circuit, although running into small computer errors is unavoidable. Then I recommend JFGI (just fucking googling it) that usually works within a few minutes. However if it goes unsolved for more than 10-15 minutes and frustration is begining to build up I reccomend asking a fellow student first and then asking the teachers, as teachers connstantly have to answer stupid questions. This part of the project was rather easy compared to other parts of the project and it took the least amount of time (approximately 6 hours). I do not remember any specific obstacles except that I made the circuit to big the first time and had to shrink it (make it more compact) before manufacturing.
+                        </p>
+                        
+                    <!-- Manufacturing electronic circuits -->
+                        <h2> Manufacturing electronic circuits</h2>
+                        <span class="image main"><img src="images/Traces_Button_LED_New.png" alt="" /></span>
+                        <p style="text-align: justify">
+                            After the design is completed the circuit must be preprocessed before being manufactured. We start by turning off all layers except top in Eagle and then export image file. This image is imported into Inkscape where it is fitted to the Traces PNG from Brian FabISP to make sure it has not undergone any resizing. Extra material is then removed to make it more compact and the edges rounded. When both traces and outline images are complete they are exported and imported into <a href="https://modsproject.org/">MIT PNG to g-code</a> where a few factors need to be set acording to the CNC-machine being used. This is the last preprocessing step before manufacturing. 
+                            <br><br>
+                            
+                            Adjusting the CNC-machine.
+                        </p>
+                    
+                    <!-- Geirnelgt módel (laser) -->
+                        <h2> Parametrískt geirnelgt (pressfit) módel samsett af byggingareiningum - 12 klst ?</h2>
+                        <h3> Verkefnislýsing </h3>
+                        <p style="text-align: justify" > 
+                            Módelið þarf að vera skalanlegt á mismunandi máta (efnisþykkt, hæðir og breiddir sem nemandi velur), útfært með parametrum í hugbúnaði að eigin vali. Mælt er með Autodesk Fusion 360 til að teikna hlutinn ef nemandi vill fá aðstoð kennara, en hafi nemandi tök á því að nota t.d. Solidworks eða Rhino 3D + Grasshopper þá er það í lagi.                                             
+                            Ef hönnunin samanstendur af byggingar einingum (nokkurnskonar púsluspili sem hægt er að raða saman á mismunandi máta) kemur það til hækkunar við mat á verkefni. Hægt er að velja um tvö mismunandi efni fyrir geislaskerann.
+                            <ul>
+                                <li> 4mmx500mmx500mm birkikrossviður 3.000 kr.</li>
+                                <li> 3mmx500mmx500mm akríl (Glært, svart eða hvítt) </li>
+
+                            </ul>
+                        </p>
+                        <h3>    Hugmyndavinna </h3>
+                            <p style="text-align: justify" >
+                                <ul>
+                                    <li> Leikfang (dífingar maður, stökkbretti og sundlaug)</li>
+                                    <li> Skíðafestingar fyrir skíðaskápinn (Arnór)</li>
+                                    <li> Box með vikudögunum á fyrir blautmatinn hans Dreka (köttur)</li>
+                                    <li> Snjóbrettafestingar fyrir skíðaskápinn</li>
+                                    <li> Ljóslukt með listaverki á hliðum</li>
+                                </ul>
+                            </p>
+                        <h3> Hvers vegna varð ljóslukt fyrir valinu?</h3>
+                            <p style="text-align: justify">
+                                Ljósluktin varð fyrir valinu vegna þess að leikfangið er auðveldara að gera með 3D prentun. Skíða og snjóbrettafestingar hefðu ekki virkað nógu vel fyrir skíðaskápinn heima (ég gerði mælingar) og auk þess fannst mér ekki spennandi að "stela" hugmynd annarra. Kattarmatarboxið hefði getað orðið fyrir valinu en ég fann einfaldari lausn til að skammta Dreka 2 pakka á dag (stundum fékk hann 3 eða 4 pakka og þá kastaði hann upp, greedy bastard). Lausnin var einfaldlega að festa 2 pakka saman með bréfaklemmu og búa þannig til 7 x 2 skammta á hverjum mánudegi.
+                            </p>
+                        <h3> Grunn málsetningar </h3>
+                            <p style="text-align: justify">
+                                Málsetningarnar sem skipta mestu máli eru stærð kertis og brunasvæðið (svæðið umhverfi kertalogann).
+                                Stærð á kertum og yfirborðsflatarmál á ljóslukt <br> 4*(Hæð + eldur)*(þvermál + eldur) + 2*(þvermál + eldur)^2
+                                <ol>
+                                    <li> Hæð = 10cm, Þvermál = 7 cm, Lukt = </li>
+                                </ol>
+                                Lanterns are lasercut from natural birch plywood 3mm.
+                                    The dimensions of candle holder are:
+                                    - height 7,5cm
+                                    - lenght 7,3cm
+                                    - width 7,3cm
+                                    The diameter of the place for tealight candle is 4cm.
+                                    (The diameter of standard tealight candle is 3,8cm).
+                                Hlutir sem ég hafði áhyggjur af við framleiðslu á ljósluktinni voru vindur, að það myndi kvikna í ljósluktinni. Og seinna kom í ljós að erfitt væri að teikna/nota nákvæmar myndir til að skera út þar sem þá yrði platan með myndinnni mjög brothætt. <br> <br>
+                                Ég komst að því að of erfitt væri að hafa myndirnar skalanlegar því ákvað ég að sleppa því.
+                            </p>
+                        <h4> Hönnun á boxinu</h4>
+                            <p style="text-align: justify">
+                                Hönnunarforsendur fyrir boxið voru að það átti að vera <u>press fit</u> og <u>parametrískt</u>. (setja inn mynd af plötu + mynd af parametrum). Ég hannaði hliðarplöturnar þ.a. allar hliðar væru eins, þ.e. ef plötunni er snúið um 90° þá lítur hún alveg eins út. Ástæðan fyrir þessari hönnun var að þá skiptir ekki máli hvernig myndinni er stillt upp á plötuna áður en hún er skorin út. Þetta skiptir máli þar sem boxið er ferningur en ekki rétthyrningur og því er ekki ljóst hvaða hlið snýr upp. Þó að margir telja að þeir myndu ekki snúa myndunum vitlaust þá tók ég eftir að þó nokkrir límdu límmiðan sem þeir skáru út með vínilskeranum öfugt á tölvuna sína (þeir viðurkenna það þó ekki).
+                            </p>
+                            <p style = "text-align: justify">
+                                <u>Offset</u>: Til að tryggja að plöturnar haldist saman þurfa þær að vera press fittaðar. Þegar laserskurðurinn fer fram þá fylgir laserinn ákveðnu skurðarferli (þ.e. fer eftir miðjum línum sem eru teiknaðar). Laserinn hefur ákveðinn radíus og nauðsynlegt er að taka þá stærð inn í reikninginn við press fit hönnun. Til að meta þennan radíus þá er gert kerf próf.<u> Kerf próf</u> fer þannig fram að skorinn er út ferhyrningur eða margir ferhyrningar sem eru teiknaðir með ákeðinni stærð (t.d. 10mm á lengd) í tölvuforriti . Raunveruleg lengd ferhyrnings eftir skurð er mæld og mismunur milli teiknaðrar og raunverulegrar lengdar reiknaður. Þessi mismunur er kerfið sem er jafnt tvöföldum radíusnum. Kerfið sem ég fékk var <b> kerf = 0,22mm</b>. Ég setti þennan parameter inn í inventor. Einfaldasta lausnin til að raunverulegar lengdir yrðu þær sömu og var áætlað var að nota <b> offset </b> skipunina á loka sketchinum. Því fylgdi þó vandamál þar sem nú voru allar línurnar tvöfaldar. Til að fá einfaldar línur extrudaðai ég offset sketchinum og notaði aftur project geometry til að búa til nýjan sketch og þá var ég kominn með einfaldar línur.
+                            <p>
+                                <u>Teikning undirbúin fyrir laserskurð</u>: Hægri klikkað er á sketchin og exportað honum sem dxf skrá. Þá er hægt að setja hana inn í inkscape og velja sömu stillingar og fyrir vínilskeran. Þá er ekki hægt að gera meira fyrr en þú kemmst í VR3 tölvuna sem er tengd við laserskerann. Þegar þú ert búinn að flytja skránna yfir í VR3 tölvuna þá opnaru hana í inkscape og velur print. Þá opnast gluggi þar sem þú sérð viðarplötuna (eða plast) og þá þarftu að staðsetja teikninguna á plötunni og velja þrjár stillingar:
+                                <ol>
+                                    <li> </li>
+                                </ol>
+                            </p>
+
+                            </p>
+                            <p style="text-align: justify">
+                                linkur hvernig á að breyta Png yfir í svg. https://sudbury.ma.us/library/wp-content/uploads/sites/380/2018/11/tracing-bitmap-in-inkscape.pdf <br>
+                                ungroup and grouping
+                            </p>
+                            <p style="text-align: justify">
+                                Hvernig á að skera út línur sem eru með sameiginlega skurðpunkta. Fyrst þarf að loka forminu ef það er opið.
+                            </p>
+
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/frosti.hlyns/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/frostihlynsson/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/Frostmanfunk/frosti.github.io" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Vefsíðu sniðmáti stolið af: <a href="https://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
