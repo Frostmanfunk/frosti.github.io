@@ -20,16 +20,24 @@
                     <a href="#menu">Menu</a>
                 </nav>
             </header>
-
+        
         <!-- Menu -->
-            <nav id="menu">
-                <ul class="links">
-                    <li><a href="index.html">Heim</a></li>
-                    <li><a href="ferilskra.html">Ferilskrá</a></li>
-                    <li><a href="verkefni_1.html">Verkefni 1</a></li>
-                    <li><a href="verkefni_2.html">verkefni 2</a></li>
-                </ul>
-            </nav>
+					<nav id="menu">
+                        
+						<ul class="links">
+							<li><a href="index.html">Heim</a></li>
+							<li><a href="ferilskra.html">Ferilskrá</a></li>
+							<li><a href="verkefni_1.html">Verkefni 1</a></li>
+							<li><a href="verkefni_2.html">verkefni 2</a></li>                            
+                            <li>
+                                <span class="opener"> Tölvustýrður vélbúnaður - VEL205M</span>
+                                <ul class ="links">
+                                    <li><a href="Project_1_VEL205M.html"> Project 1</a></li>
+                                    <li><a href="Project_2_VEL205M.html"> Project 2</a> </li>
+                                </ul>
+                            </li>
+						</ul>
+					</nav>
 
         <!-- Main -->
             <div id="main" class="alt">
@@ -41,7 +49,7 @@
                     <!-- Verkefni 1 - VEL205M -->
                         <h1>Project 1 - Manufacturing, Designing and Programming embedded systems.</h1>
                         
-                        Add picture of final outcome here.
+                        <span class="image main"><img src="images/Microcontroller.jpg" alt="" /></span>
                         
                         <!-- Project description -->
                         <div>
@@ -63,7 +71,7 @@
                             <ul>
                                 <li> <a href="https://www.autodesk.com/products/eagle/free-download">Autodesk Eagle</a> (For PCB design)</li>
                                 <li> <a href= "https://inkscape.org/"> Inkscape</a> (For PCB board machining) </li>
-                                <li> <a href="https://www.arduino.cc/"> Arduino</a> (For programming) </li>
+                                <li> <a href="https://www.arduino.cc/"> Arduino IDE</a> (For programming) </li>
                             </ul>
                             Education
                             <ul>
@@ -75,6 +83,8 @@
                                 <li> CNC - machine</li>
                                 <li> PCB components (see Brian FabISP)</li>
                                 <li> Multimeter (for mesuring circuit connections)</li>
+                                <li> Arduino UNO or simmilar</li>
+                                <li> Soldering iron and tin</li>
                             </ul>
                             
                         </div>
@@ -93,6 +103,8 @@
                     <!-- Manufacturing electronic circuits -->
                         <h2> Manufacturing electronic circuits</h2>
                         <span class="image main"><img src="images/Traces_Button_LED_New.png" alt="" /></span>
+                        <img src="images/CNC_microcontroller.jpg" alt="" style="width:auto;height:500px;">
+                        <img src="images/Roland_CNC.jpg" alt="" style="width:auto;height:500px;">
                         <p style="text-align: justify">
                             After the design is completed the circuit must be preprocessed before being manufactured. We start by turning off all layers except top in Eagle and then export image file. This image is imported into Inkscape where it is fitted to the Traces PNG from Brian FabISP to make sure it has not undergone any resizing. Extra material is then removed to make it more compact and the edges rounded. When both traces and outline images are complete they are exported and imported into <a href="https://modsproject.org/">MIT PNG to g-code</a> where a few factors need to be set acording to the CNC-machine being used. This is the last preprocessing step before manufacturing. 
                             <br><br>
@@ -101,6 +113,19 @@
                         <p style="text-align: justify"> 
                             The CNC-machine used for cutting the traces and outline was from Roland. I started by transfering the g-code files to the computer connected to the CNC-machine. Then the right mill was selected for the traces (the smaller one) and the coordinate system adjusted to make sure no extra material would be wasted. The zero point was set and the mill fastened so that it was touching the copper. Then the mill was moved 2mm upp and the milling could begin. After milling the traces the mill was switched for the bigger one to mill the outline. 
                         </p>
+                        <h2> Programming microcontrollers</h2>
+                        <img src="images/programming_ISP.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+                        <img src="images/SSH_ISP.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+                        <p style="text-align: justify">
+                            The Arduino IDE was used to program both the ISP and the arduino UNO. The ISP was pre-programmed with RasperyPI through SSH. That took a bit longer than expected, it was not working at first so I double checked all the connections with a multimeter and Hafliði did the same and found no error. Later I found out that the USB connection was not good enough and it had to be placed exactly right for the connection to work.
+                        </p>
+                        <h2> Use of output and input devices</h2> 
+                        <img src="images/Oled.jpg" alt="" style="width:500px;height:auto;">
+                        <img src="images/Acceleromter.jpg" alt="" style="width:500px;height:auto;">
+                        <p style="text-align: justify"> 
+                            I used an Oled screen for output device which worked well and I had no problems with. Then I used an accelerometer for an input device which did not work as planned. It only showed the first 2 to 3 measurements and then complete nonsense after that. The plan was to show the acceleration on the Oled screen but since I did not get the accelerometer to work propperly I was unable to do that.
+                        </p>
+                        
 
                     </div>
 
