@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project 2 - Rauðvínsgjafi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+        <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Frosti</strong> <span> Tölvustýrður vélbúnaður - VÉL205M</span></a>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+        <!-- Menu -->
+            <nav id="menu">
+
+                <ul class="links">
+                    <li><a href="index.html">Heim</a></li>
+                    <li><a href="ferilskra.html">Ferilskrá</a></li>
+                    <li><a href="verkefni_1.html">Verkefni 1</a></li>
+                    <li><a href="verkefni_2.html">verkefni 2</a></li>                            
+                    <li>
+                        <span class="opener"> Tölvustýrður vélbúnaður - VEL205M</span>
+                        <ul class ="links">
+                            <li><a href="Project_1_VEL205M.html"> Project 1</a></li>
+                            <li><a href="Project_2_VEL205M.html"> Project 2</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Main -->
+            <div id="main" class="alt">
+
+            <!-- One -->
+                <section id="one">
+                    <div class="inner">
+                        
+                    <!-- Verkefni 2 -->
+                        <h1>Project 2 - Í vinnslu</h1>
+                        
+                        <div>
+                            <h2> <a href="24_VEL205M_TV_Verkefni_02.pdf">Project description - pdf (click here)</a>  </h2>
+                            
+                        </div>
+                        <div>
+                            <video width="400" controls>
+                              <source src=""WIN_20240316_17_25_27_Pro.mp4"" type="video/mp4">
+                              <source src="mov_bbb.ogg" type="video/ogg">
+                              Your browser does not support HTML video.
+                            </video>
+
+                            <video width="400" controls>
+                              <source src="mov_bbb.mp4" type="video/mp4">
+
+                              Your browser does not support HTML video.
+                            </video>
+                        </div>
+                        
+                        
+                        
+                    <!-- Límmiði -->
+                        <div>
+                            <h2> Pre calculations and component selection </h2>
+                            <p style="text-align: justify" > 
+
+                                First we need to calculate momentum and power before selecting motors.
+                                
+                                We assume 50% losses in the motors (because of poor design).
+                                
+                                Helpful link:
+                                
+                                https://www.youtube.com/watch?v=idVcItHfGS4&t=3s (youtube video on how to run stepper motor)
+                                https://www.instructables.com/Complete-Motor-Guide-for-Robotics/
+
+                                Stepper motors need to be powerfull, servo motors are better.
+                            </p>
+                        </div>
+                        <div>
+                            <h2> Hardware required</h2>
+                            <ul class = "links">
+                                <li> Arduino Uno</li>
+                                <li> 2 big stepper motors <a href="https://www.jvl.dk/files/_2011clean/pdf/ld024gb.pdf">MST001A-S8</a> </li>
+                                <li> medium stepper motor <a href="https://shop.myhobby-cnc.de/media/pdf/af/ee/4f/nema17.pdf">SM42HT46-1684B</a></li>
+                                <li> 1 small stepper motor <a href="https://www.pololu.com/file/0J690/SY35ST26-0284A.pdf">SY35ST26-0248A</a></li>
+                                <li> Motor controller <a href="https://www.youtube.com/watch?v=idVcItHfGS4&t=3s">TB660</a></li>
+                                <li> Motor controller <a href="https://cdn.velleman.eu/downloads/29/vma409_a4v01.pdf"> Velleman VMA409</a></li>
+                                <li>Motor controller <a href="https://www.hackster.io/bobowman/12v-dc-motor-controlled-by-adafruit-tb6612-motor-driver-feec83">TB6612</a></li>
+                                <li> Power suply</li>
+                                <li> Bread board</li>
+                                <li> hook-up wires</li>
+                            </ul>
+                            Hardware we did not use but considered:
+                            <ul class = "links">
+                                <li> very week stepper motor <a href="https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/?utm_content=cmp-true">Step motor 28BYJ-48</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2> circuits </h2>
+                            <div>
+                                <h3> Stepper motors </h3>
+                                We first used the wrong circuit which set us back 2-3 hours <a href="https://wiki.dfrobot.com/TB6600_Stepper_Motor_Driver_SKU__DRI0043">Do not use this</a>.
+                            </div>
+                        </div>
+                        <!-- tutorials -->
+                        <div>
+                            <h2> Tutorials</h2>
+                            <a href="https://howtomechatronics.com/tutorials/arduino/stepper-motors-and-arduino-the-ultimate-guide/?utm_content=cmp-true">Stepper motors</a>
+                            <br>
+                            <a href="https://www.circuitmagic.com/arduino/how-to-run-stepper-motor-with-arduino-using-l298n-driver-module/">
+                            L298 motorcontroller and stepper motor</a>
+                        </div>
+                
+                    </div>
+
+                </section>
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/frosti.hlyns/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/frostihlynsson/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/Frostmanfunk/frosti.github.io" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Vefsíðu sniðmáti stolið af: <a href="https://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
