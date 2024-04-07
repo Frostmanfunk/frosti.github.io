@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Project 2 - Rauðvínsgjafi</title>
+		<title>Final Project - Cart follower</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -47,66 +47,54 @@
                 <section id="one">
                     <div class="inner">
                         
-                    <!-- Verkefni 2 -->
-                        <h1>Project 2 - Wine robot <br> 
+                    <!-- Final Project -->
+                        <h1>Final Project - Blue tooth cart follower <br> 
                             Work in progress (last updated 7. april)</h1>
                         
-                        <span class="image main"><img src="images/WineRobot.jpg" alt="" /></span>
+                        <span class="image main"><img src="images/Bt_car.png" alt="" /></span>
                         
                         <div>
-                            <h2> <a href="VEL205M-Tolvustyrdurvelbunadur/24_VEL205M_TV_Verkefni_02.pdf">Project description - pdf (click here)</a>  </h2>
+                            <h2> Project description</h2>
                             
+                            <p style="text-align: justify" >
+                                The goal of the project is to design a prototype of a car that follows a person via wireless connection (bt or simmilar). The car will be controlled with an app in your smartphone. There will be 2 settings, manual and automatic control. The manual control would be a simple control (forward, backwards, turn left, turn right, increase / decreese speed). We will be mainly focusing on the automatic control. An accelerometer will be used for tracking the position of the user and the car will mimmick / follow based on the accelerometer data.    
+                            </p>                            
                         </div>
                         <div>
-                            <a href ="https://www.youtube.com/watch?v=bnNvGzzTr4A&t=69s"> Video that shows how the wine robot functions.</a> <br>
-                            
-                            <a href = "https://www.youtube.com/watch?v=ftPEWh7sRnQ"> Video of the code output (should be played with video above at the same time)</a> 
-                            <br>
-                            
-                            <a href="VEL205M-Tolvustyrdurvelbunadur/Wine_robot_report.pdf"> Wine robot report</a></li>
+                            <a href ="https://www.youtube.com/watch?v=-Jn_WhLMg9U&t=402s"> Video that shows how manual mode works.</a> <br>
                         </div>
                         
                         
                     
                     <!-- Pre calculations -->
-                        <div>
-                            <h2> Pre calculations and component selection </h2>
-                            <p style="text-align: justify" > 
-                            
-                                First we need to calculate momentum and power before selecting motors. We calculated the necessary torque and gear ratios in excel (see on github page).
-                                
-                                We assume 50% losses in the motors (because of poor design). <br>
-                                
-                                Helpful links:
-                                <ul cla ="links">
-                                    <li> <a href="https://www.youtube.com/watch?v=idVcItHfGS4&t=3s">(youtube video on how to run stepper motor)</a></li>
-                                    <li> <a href="https://www.instructables.com/Complete-Motor-Guide-for-Robotics/"> Motor guide </a> </li>   
-                                </ul>
-                            </p>
-                        </div>
                         
                     <!-- Hardware required -->
                         <div>
                             <h2> Hardware required</h2>
                             <ul class = "links">
                                 <li> Arduino Uno</li>
-                                <li> big stepper motor <a href="https://www.jvl.dk/files/_2011clean/pdf/ld024gb.pdf">MST001A-S8</a> </li>
-                                <li> medium stepper motor <a href="https://shop.myhobby-cnc.de/media/pdf/af/ee/4f/nema17.pdf">SM42HT46-1684B</a></li>
-                                <li> small stepper motor <a href="https://www.pololu.com/file/0J690/SY35ST26-0284A.pdf">SY35ST26-0248A</a></li>
-                                <li> Motor controller <a href="https://www.youtube.com/watch?v=idVcItHfGS4&t=3s">TB660</a></li>
-                                <li> Motor controller <a href="https://cdn.velleman.eu/downloads/29/vma409_a4v01.pdf"> Velleman VMA409</a></li>
-                                <li>Motor controller <a href="https://www.hackster.io/bobowman/12v-dc-motor-controlled-by-adafruit-tb6612-motor-driver-feec83">TB6612</a></li>
+                                <li> 2 motors for driving</li>
+                                <li> 1 motor for steering</li>
+                                <li> Motor controllers</li>
+                                <li> Accelerometer</li>
+                                <li> Bluetooth module for arduino (ESP32-C3)</li>
                                 <li> Power suply</li>
                                 <li> Bread board</li>
                                 <li> hook-up wires</li>
                             </ul>
-                            Hardware we did not use but considered:
-                            <ul class = "links">
-                                <li> very week stepper motor <a href="https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/?utm_content=cmp-true">Step motor 28BYJ-48</a></li>
-                            </ul>
+                        </div>
+                        
+                    <!-- Other components -->
+                        <div>
+                            <h3> Other components</h3>
+                            <ul class="links">
+                                <li> 3 or 4 wheels</li>
+                                <li>Chassis</li>
+                                <li> Axles</li>
+                            </ul>                                
                         </div>
                         <div>
-                            <h2> circuits </h2>
+                            <h2> circuit diagrams </h2>
                             <div>
                                 <h3> Stepper motors </h3>
                                 We first used the wrong circuit which set us back 2-3 hours <a href="https://wiki.dfrobot.com/TB6600_Stepper_Motor_Driver_SKU__DRI0043">Do not use this</a>.
