@@ -48,8 +48,8 @@
                     <div class="inner">
                         
                     <!-- Final Project -->
-                        <h1>Final Project - Blue tooth cart follower <br> 
-                            Work in progress (last updated 7. april)</h1>
+                        <h1>Final Project - Blue tooth car follower <br> 
+                            Work in progress (last updated 12. april)</h1>
                         
                         <span class="image main"><img src="images/Bt_car.png" alt="" /></span>
                         
@@ -90,6 +90,26 @@
                                 <li> Axles</li>
                             </ul>                                
                         </div>
+                <!-- components selection -->
+                        <div>
+                            <h2> Component selection</h2>
+                            <u> Micro controller</u>: We used Arduino Uno and ESP32 for bluetooth connection. RasperryPI would probably be a better fit for bluetooth controlled car since it has a built in bluetooth module. <br>
+                            
+                            
+                            <u>Motors</u>: Geared DC motors are usually better than steppers when it comes to traction drive of a robot. If you're going to use DC motors, you will probably need to find some that have encoders or navigation will be rather hit and miss at best. The inefficiency of steppers make them less than ideal for battery powered projects. <br>
+                            
+                            <u> Motor controllers</u>: <a href="https://dronebotworkshop.com/dc-motor-drivers/"> Guide to selecting motor controllers for DC motors.</a>: <b>Voltage</b> for DC motors can be anywhere between 50% of the "suggested voltage" but it is not reccomended to exceed it by more than 30%. A motor driver should have <b>current</b> that is rated 30 - 50% above the rated current for the DC motor.
+                            <br>
+                            
+                            <u>Acceleromter</u>: ...
+                            <br>
+                            
+                            <u>Wheels</u>: <a href="https://dronebotworkshop.com/real-robot-004/">article on wheels for robotics.</a> standard wheels for driving and omni wheels for idler is probably a good fit.<br>
+                            
+                            <u>Chassis</u>: 3D printed or just a plate.
+                            
+                        </div>
+                        
                 <!-- Bluetooth connection -->
                         <div>
                             <h3> ESP32-C3 XIAO (used for bluetooth connection)</h3>
