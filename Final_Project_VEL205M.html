@@ -49,7 +49,7 @@
                         
                     <!-- Final Project -->
                         <h1>Final Project - Blue tooth car follower <br> 
-                            Work in progress (last updated 12. april)</h1>
+                            Work in progress (last updated 17. april)</h1>
                         
                         <span class="image main"><img src="images/Bt_car.png" alt="" /></span>
                         
@@ -63,6 +63,13 @@
                         <div>
                             <a href ="https://www.youtube.com/watch?v=-Jn_WhLMg9U&t=402s"> Video that shows how manual mode works.</a> <br>
                         </div>
+                        
+                    <!-- Project management -->
+                        <h1> Project management </h1>
+                        
+                        <p style="text-align: justify">
+                            List of things that need to be done
+                        </p>
                         
                         
                     
@@ -101,6 +108,8 @@
                             <u> Motor controllers</u>: <a href="https://dronebotworkshop.com/dc-motor-drivers/"> Guide to selecting motor controllers for DC motors.</a>: <b>Voltage</b> for DC motors can be anywhere between 50% of the "suggested voltage" but it is not reccomended to exceed it by more than 30%. A motor driver should have <b>current</b> that is rated 30 - 50% above the rated current for the DC motor.
                             <br>
                             
+                            <u> Power supply</u>: <a href=""
+                            
                             <u>Acceleromter</u>: ...
                             <br>
                             
@@ -109,6 +118,15 @@
                             <u>Chassis</u>: 3D printed or just a plate.
                             
                         </div>
+                <!-- DC motor control -->
+                        <div>
+                            <h2> DC motors</h2>
+                            <p style="text-align: justify">
+                                <span class="image main"><img src="images/20240417_234026.jpg" alt="" /></span>
+                                The code for DC motors can be found on github. 
+                            </p>
+                        </div>
+                            
                         
                 <!-- Bluetooth connection -->
                         <div>
@@ -135,13 +153,42 @@
                                 <u> Fourth test</u>: Transfer positioning data via bluetooth 
                                 <br>
                                 
-                                <u> Fifth test</u>: Turn motors via bluetooth
-                                
-                                
-                                
+                                <u> Fifth test</u>: Turn motors via bluetooth                                
                             </p>
+                            <h3> Arduino UNO R4 WiFi</h3>
+                            <a href = "https://www.arduino.cc/reference/en/libraries/arduinoble/"> Bluetooth documentation</a>
+                            We will be using the <b>Notify</b> section for the accelerometer. The <b> Central and Peripheral Devices</b> gives a good explenation on how bluetooth connections work. Central = clients, Peripheral = servers. <b>Library structure</b> chapter shows the main classes for bluetooth connections.
+                            
+                            <h3> Arduino cloud</h3>
+                            https://app.arduino.cc/things 
                             
                         </div>
+                <!-- Accelerometer -->
+                        <div>
+                            <h2> Accelerometer (ADXL343)</h2>
+                            We are going to use an accelerometer to decide the position of the cart. A GPS tracker would be more precise but it is more expensive and therefore we chose an acceleromter. The datasheet for the accelerometer can be found by google-ing. <br>
+                            <span class="image main"><img src="images/accelerometer_pinout.png" alt="" /></span>
+                            <ul>
+                                <li> Connect SCL on the Metro to SCL (yellow wire) on the ADXL343
+                                </li>
+                                <li>
+                                    Connect SDA on the Metro to SDA (blue wire) in the ADXL343
+                                </li>
+                                <li> Connect GND on the Metro to GND (black wire) on the ADXL343
+                                </li>
+                                <li>
+                                For 3.3V LOGIC boards: connect 3.3V on the Arduino/Metro to VIN (red wire) on the ADXL343
+                                </li>
+                                <li>For 5.0V LOGIC boards: Connect 5V on the Arduino/Metro to VIN (red wire) on the ADXL343
+                                </li>                            
+                            </ul>
+                            <a href = "https://learn.adafruit.com/adxl343-breakout-learning-guide?view=all">Tutorial</a>
+                            
+                            
+                        </div>
+                    
+                    
+                <!-- Circuit diagrams -->
                         <div>
                             <h2> circuit diagrams </h2>
                             <div>
@@ -149,7 +196,7 @@
                                 We first used the wrong circuit which set us back 2-3 hours <a href="https://wiki.dfrobot.com/TB6600_Stepper_Motor_Driver_SKU__DRI0043">Do not use this</a>.
                             </div>
                         </div>
-                        <!-- tutorials -->
+                <!-- tutorials -->
                         <div>
                             <h2> Tutorials</h2>
                             <a href="https://howtomechatronics.com/tutorials/arduino/stepper-motors-and-arduino-the-ultimate-guide/?utm_content=cmp-true">Stepper motors</a>
