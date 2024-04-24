@@ -49,7 +49,7 @@
                         
                     <!-- Final Project -->
                         <h1>Final Project - Blue tooth car follower <br> 
-                            Work in progress (last updated 17. april)</h1>
+                            Work in progress (last updated 24. april)</h1>
                         
                         <span class="image main"><img src="images/Bt_car.png" alt="" /></span>
                         
@@ -62,13 +62,24 @@
                         </div>
                         <div>
                             <a href ="https://www.youtube.com/watch?v=-Jn_WhLMg9U&t=402s"> Video that shows how manual mode works.</a> <br>
+                            <a href = "https://www.youtube.com/watch?v=FIc67Z_X9Kk"> Car race for best lap time </a> <br>
+                            <a href = "https://www.youtube.com/watch?v=XTTTgZOBoFo&t=76s">Testing useability of the car control. </a>
                         </div>
                         
                     <!-- Project management -->
                         <h1> Project management </h1>
                         
                         <p style="text-align: justify">
-                            List of things that need to be done
+                            List of things that need to be done:
+                            <ol>
+                                <li> Car chassis (Ási)</li> 
+                                <li> Wireless control (Frosti)</li>
+                                <li> Accelerometer (Frosti)</li>
+                                <li> Motors (Ási)</li>
+                                <li> Wheels (Ási)</li>
+                                <li> Mechanical steering (Ási)</li>
+                                <li> code (ChatGPT) </li>
+                            </ol>
                         </p>
                         
                         
@@ -79,15 +90,13 @@
                         <div>
                             <h2> Hardware required</h2>
                             <ul class = "links">
-                                <li> Arduino Uno</li>
+                                <li> Arduino Uno R4 WiFi</li>
                                 <li> 2 motors for driving</li>
                                 <li> 1 motor for steering</li>
                                 <li> Motor controllers</li>
                                 <li> Accelerometer</li>
-                                <li> Bluetooth module for arduino (ESP32-C3)</li>
                                 <li> Power suply</li>
-                                <li> Bread board</li>
-                                <li> hook-up wires</li>
+                                <li> Hook-up wires</li>
                             </ul>
                             
                             <h3> Other components</h3>
@@ -95,12 +104,13 @@
                                 <li> 3 or 4 wheels</li>
                                 <li> Chassis </li>
                                 <li> Axles</li>
+                                <li> Mechanical steering</li>
                             </ul>                                
                         </div>
                 <!-- components selection -->
                         <div>
                             <h2> Component selection</h2>
-                            <u> Micro controller</u>: We used Arduino Uno and ESP32 for bluetooth connection. RasperryPI would probably be a better fit for bluetooth controlled car since it has a built in bluetooth module. <br>
+                            <u> Micro controller</u>: We used Arduino Uno and ESP32 for bluetooth connection. RasperryPI would probably be a better fit for bluetooth controlled car since it has a built in bluetooth module. We ended with Arduino Uno R4 WiFi which simplified the Bt / WiFi connection. <br>
                             
                             
                             <u>Motors</u>: Geared DC motors are usually better than steppers when it comes to traction drive of a robot. If you're going to use DC motors, you will probably need to find some that have encoders or navigation will be rather hit and miss at best. The inefficiency of steppers make them less than ideal for battery powered projects. <br>
@@ -108,14 +118,15 @@
                             <u> Motor controllers</u>: <a href="https://dronebotworkshop.com/dc-motor-drivers/"> Guide to selecting motor controllers for DC motors.</a>: <b>Voltage</b> for DC motors can be anywhere between 50% of the "suggested voltage" but it is not reccomended to exceed it by more than 30%. A motor driver should have <b>current</b> that is rated 30 - 50% above the rated current for the DC motor.
                             <br>
                             
-                            <u> Power supply</u>: <a href=""
+                            <u> Power supply</u>: We used a 6V battery consisting of 4 1.5V batteries connected in series to power the motor controller. For the Arduino we used a power bank (most power banks are suitable for arduino since it needs simmilar power supply as most smart phones).
+                            <br>
                             
-                            <u>Acceleromter</u>: ...
+                            <u>Acceleromter</u>: We tried using an accelerometer for position control, It did not turn out well. In 60 secounds the calculated position of the car had shifted approximately 15m in x direction and 12m in y direction when the car was completely stationary.
                             <br>
                             
                             <u>Wheels</u>: <a href="https://dronebotworkshop.com/real-robot-004/">article on wheels for robotics.</a> standard wheels for driving and omni wheels for idler is probably a good fit.<br>
                             
-                            <u>Chassis</u>: 3D printed or just a plate.
+                            <u>Chassis</u>: The chassis was fairly simple, just 2 laser cut plates connected with 3D printed objects and other things. If we were to continue the project we would design a chassis that would protect vital parts from rain. We would also make special slots for electric components to be placed. If that would turn out well and GPS connection would work we would add a suspension system and scale the project up to make it more simmilar to a golf club trollies.
                             
                         </div>
                 <!-- DC motor control -->
@@ -123,14 +134,14 @@
                             <h2> DC motors</h2>
                             <p style="text-align: justify">
                                 <span class="image main"><img src="images/20240417_234026.jpg" alt="" /></span>
-                                The code for DC motors can be found on github. 
+                                The code for DC motors can be found on github or just ask ChatGPT. 
                             </p>
                         </div>
                             
                         
                 <!-- Bluetooth connection -->
                         <div>
-                            <h3> ESP32-C3 XIAO (used for bluetooth connection)</h3>
+                            <h3> ESP32-C3 XIAO (was ment to be used for wireless connection)</h3>
                             <p style="text-align: justify">
                                 I used this link <a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/">https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/</a> for tutorial.
                                 <br>
@@ -144,29 +155,44 @@
                                 
                                 <br>
                                 <br>
-                                <u> Third test</u>: Connecting Arduino Uno to ESP32-C3 
+                                <u> Third test</u>: 
+                                <a href = "https://icircuit.net/arduino-interfacing-arduino-uno-esp32/2134">Interfacing Arduino Uno with ESP32</a>.
                                 <br>
-                                <a href = "https://icircuit.net/arduino-interfacing-arduino-uno-esp32/2134">Interfacing Arduino Uno with ESP32</a>
+                                This turned out to be quite complicated and we ended up switching to Arduino Uno R4 WiFi.
                                 
                                 <br>
-                                <br>
-                                <u> Fourth test</u>: Transfer positioning data via bluetooth 
-                                <br>
                                 
-                                <u> Fifth test</u>: Turn motors via bluetooth                                
+                                                              
                             </p>
+                            
+                            
                             <h3> Arduino UNO R4 WiFi</h3>
                             <a href = "https://www.arduino.cc/reference/en/libraries/arduinoble/"> Bluetooth documentation</a>
                             We will be using the <b>Notify</b> section for the accelerometer. The <b> Central and Peripheral Devices</b> gives a good explenation on how bluetooth connections work. Central = clients, Peripheral = servers. <b>Library structure</b> chapter shows the main classes for bluetooth connections.
+                            <br>
+                            <br>
+                            <u> Fourth test</u>: Transfer positioning data via bluetooth 
+                            <br>
+                            We never got to testing this since we deemed the accelerometer unable to calculate the position of the car with accebtable error.
+                            <br>  
+                            <br>
+                            <u> Fifth test</u>: Control motors via wireless connection.
+                            <br>
+                            This worked well once the WiFi connection was established.
+                            
                             
                             <h3> Arduino cloud</h3>
-                            https://app.arduino.cc/things 
+                            <a href = "https://app.arduino.cc/things ">Arduino IoT UI</a>, This webpage was used to create wireless connections between a phone and the car. It was also used for creating the code and monitoring serial ouput when testing.                         
+                            
+                            <a href ="https://www.youtube.com/watch?v=iWJJfQ3NIWQ&list=PLXkPD0wi6XzuRkHmio5bcsyMYkz1WgWaS&index=9"> Arduino IoT DC motor tutorial</a>
+                            
+                            When connecting Arduino UNO R4 to the internet you need to make sure that the SECRET_SSID = Wi-Fi name and SECRET_OPTIONAL_PASS = Wi-Fi password. Both your phone and Arduino need to be connected to the same WiFi
                             
                         </div>
                 <!-- Accelerometer -->
                         <div>
                             <h2> Accelerometer (ADXL343)</h2>
-                            We are going to use an accelerometer to decide the position of the cart. A GPS tracker would be more precise but it is more expensive and therefore we chose an acceleromter. The datasheet for the accelerometer can be found by google-ing. <br>
+                            We tried using an accelerometer to calculate the position of the car. A GPS tracker would be more precise but it is more expensive and it wasn't available so we would have had to order it online and wait 2 - 3 weeks for it's arrival. and therefore we chose an acceleromter. The datasheet for the accelerometer can be found by google-ing. <br>
                             <span class="image main"><img src="images/accelerometer_pinout.png" alt="" /></span>
                             <ul>
                                 <li> Connect SCL on the Metro to SCL (yellow wire) on the ADXL343
@@ -192,17 +218,13 @@
                         <div>
                             <h2> circuit diagrams </h2>
                             <div>
-                                <h3> Stepper motors </h3>
-                                We first used the wrong circuit which set us back 2-3 hours <a href="https://wiki.dfrobot.com/TB6600_Stepper_Motor_Driver_SKU__DRI0043">Do not use this</a>.
+                                The circuit was very simple and does not need special explanation. It is basically the same as other DC motors circuits and Accelerometer circuits.
                             </div>
                         </div>
                 <!-- tutorials -->
                         <div>
                             <h2> Tutorials</h2>
-                            <a href="https://howtomechatronics.com/tutorials/arduino/stepper-motors-and-arduino-the-ultimate-guide/?utm_content=cmp-true">Stepper motors</a>
-                            <br>
-                            <a href="https://www.circuitmagic.com/arduino/how-to-run-stepper-motor-with-arduino-using-l298n-driver-module/">
-                            L298 motorcontroller and stepper motor</a>
+                            Will be added later.
                         </div>
                 
                     </div>
